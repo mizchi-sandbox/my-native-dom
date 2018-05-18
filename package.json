@@ -5,7 +5,8 @@
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start",
     "test": "jest",
-    "deploy": "sh build.sh && netlify deploy -p dom/dist"
+    "build": "sh build.sh",
+    "deploy": "yarn build && netlify deploy -p dom/dist"
   },
   "dependencies": {
     "react": "16.3.1",
